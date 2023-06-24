@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_view"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.qgj.shoping.fragment.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.qgj.shoping.fragment.UserFragment"
+        android:label="个人中心"
+        tools:layout="@layout/fragment_user" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.qgj.shoping.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/MapFragment"
+        android:name="com.qgj.shoping.fragment.MapFragment"
+        android:label="定位你的位置"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/ScanFragment"
+        android:name="com.qgj.shoping.fragment.ScanFragment"
+        android:label="扫一扫"
+        tools:layout="@layout/fragment_scan" />
+    <fragment
+        android:id="@+id/shoppingFragment"
+        android:name="com.qgj.shoping.fragment.ShoppingFragment"
+        android:label="fragment_shopping"
+        tools:layout="@layout/fragment_shopping" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.qgj.shoping.fragment.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"/>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.qgj.shoping.fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.qgj.shoping.fragment.InfoFragment"
+        android:label="商品详情"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.qgj.shoping.fragment.OrderFragment"
+        android:label="用户订单"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/updatePasswordFragment"
+        android:name="com.qgj.shoping.fragment.UpdatepasswordFragment"
+        android:label="修改密码"
+        tools:layout="@layout/fragment_updatepassword"/>
+
+    <fragment
+        android:id="@+id/updateuserinfoFragment"
+        android:name="com.qgj.shoping.fragment.UpdateuserinfoFragment"
+        android:label="个人信息"
+        tools:layout="@layout/fragment_updateuserinfo"/>
+
+    <fragment
+        android:id="@+id/orderdetailFragment"
+        android:name="com.qgj.shoping.fragment.OrderdetailFragment"
+        android:label="订单详情"
+        tools:layout="@layout/fragment_orderdetail"/>
+
+    <fragment
+        android:id="@+id/mycommentFragment"
+        android:name="com.qgj.shoping.fragment.MycommentFragment"
+        android:label="我的评价"
+        tools:layout="@layout/fragment_mycomment"/>
+
+</navigation>

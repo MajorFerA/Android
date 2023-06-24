@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".fragment.homeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/search"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="请输入搜索内容"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/sousuo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="#E8BB34"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/mBtn1"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_compass" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/serach"
+            android:layout_width="297dp"
+            android:layout_height="50dp"
+            android:background="@drawable/search"
+            app:iconifiedByDefault="false"
+            app:queryHint="请输入搜索内容">
+
+        </androidx.appcompat.widget.SearchView>
+
+        <ImageButton
+            android:id="@+id/mBtn2"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shopping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>
